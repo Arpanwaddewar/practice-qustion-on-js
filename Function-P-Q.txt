@@ -1,9 +1,15 @@
-// =====problem--1--
+ =====problem--1--
 
- A very common programming interview question is that given a string you need to find out the duplicate characters in the string.
+//  create a function for sum of two array
 
-//  let Input =  'adsjfdsfsfjsdjfhacabcsbajda';
-
-// // Output: { a: 5, b: 2, c: 2, d: 4, f: 4, j: 4, s: 5 }
-
-// for (i = 0; i<=Input)
+function Sum(arr){
+	sum=0;
+      for(let i=0;i<arr.length;i++){
+        sum+=arr[i];
+      }
+      return sum;
+    }
+    let sum=0;
+    let arr_1 = [3, 5, 22, 5,  7,  2,  45, 75, 89, 21, 2];
+    let arr_2 = [9, 2, 42, 55, 71, 22, 4,  5,  90, 25, 26];
+ console.log("Final_Sum: "+(Sum(arr_1) + Sum(arr_2)));
